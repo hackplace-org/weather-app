@@ -1,0 +1,33 @@
+button,
+input,
+select {
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid #cbcbcb;
+}
+
+form,
+.input {
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	gap: 1rem;
+}
+
+.input {
+	gap: 0.25rem;
+}
+
+#submit,
+#current {
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+}
+
+#submit:hover {
+	color: white;
+	border-color: #00AAFF;
+	background-color: #00AAFF;
+}

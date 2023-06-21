@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./styles/weather.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
+
+		<script src="./scripts/weather.js" defer></script>
+
+		<title>Weather</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>
+					Weather in <span id="city">location</span>
+					<span id="country">country</span> 🌤️
+				</h1>
+				<p>
+					The weather is currently
+					<span id="description">description</span>.
+				</p>
+
+				<button
+					id="back"
+					class="text-button"
+					onclick="window.location.href = '/'"
+				>
+					Go back
+				</button>
+			</div>
+		</header>
+
+		<div class="items">
+			<div class="item">
+				<h4>Sunrise</h4>
+				<p id="sunrise">Sunrise</p>
+			</div>
+
+			<div class="item">
+				<h4>Sunset</h4>
+				<p id="sunset">Sunset</p>
+			</div>
+
+			<div class="item">
+				<h4>Timezone</h4>
+				<p id="timezone">Timezone</p>
+			</div>
+
+			<div class="item">
+				<h4>Cloudiness</h4>
+				<p id="cloudiness">Cloudiness</p>
+			</div>
+
+			<div class="item">
+				<h4>Wind Direction</h4>
+				<p id="wind_direction">Wind Direction</p>
+			</div>
+
+			<div class="item">
+				<h4>Wind Speed</h4>
+				<p id="wind_speed">Wind Speed</p>
+			</div>
+
+			<div class="item">
+				<h4>Visibility</h4>
+				<p id="visibility">Visibility</p>
+			</div>
+
+			<div class="item">
+				<h4>Humidity</h4>
+				<p id="humidity">Humidity</p>
+			</div>
+
+			<div class="item">
+				<h4>Temperature</h4>
+				<p id="temperature">Temperature</p>
+			</div>
+
+			<div class="item">
+				<h4>Feels Like</h4>
+				<p id="feels_like">Feels Like</p>
+			</div>
+
+			<div class="item">
+				<h4>Pressure</h4>
+				<p id="pressure">Pressure</p>
+			</div>
+		</div>
+	</body>
+</html>

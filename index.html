@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- <style>
+			* {
+				margin: 0;
+				padding: 0;
+				border: none;
+				box-sizing: border-box;
+			}
+
+			body {
+				height: 100vh;
+				padding: 2rem;
+				font-family: "Roboto", sans-serif;
+			}
+
+			h1 {
+				margin-bottom: 1rem;
+			}
+		</style> -->
+
+		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/global.css" />
+
+		<script src="./scripts/index.js" defer></script>
+
+		<title>Search</title>
+	</head>
+	<body>
+		<header>
+			<h1>Search the weather 🌤️</h1>
+		</header>
+
+		<form>
+			<div class="input">
+				<label for="city">City</label>
+				<input
+					type="text"
+					name="city"
+					id="city"
+					placeholder="Your city"
+				/>
+
+				<div>
+					<button type="submit" id="current" class="text-button">
+						Use current location
+					</button>
+				</div>
+			</div>
+
+			<div class="input">
+				<label for="units">Units</label>
+				<!-- <input type="text" name="units" id="units" required /> -->
+				<select name="units" id="units" required>
+					<option value="metric">Metric</option>
+					<option value="imperial" selected>Imperial</option>
+				</select>
+			</div>
+
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</body>
+</html>

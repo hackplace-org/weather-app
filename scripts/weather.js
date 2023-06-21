@@ -6,6 +6,18 @@ document.getElementById("city").textContent = city;
 const weatherData = sessionStorage.getItem("weatherData");
 const data = JSON.parse(weatherData);
 
+function goBack() {
+	window.location.href = window.location.href
+		.split("/")
+		.slice(0, -1)
+		.join("/");
+}
+
+if (!data) {
+	alert("No search data found. Please search again.");
+	goBack();
+}
+
 const textContent = {
 	country: [`(${data.sys.country})`, "", ""],
 	description: [data.weather[0].description, "", ""],
@@ -40,3 +52,8 @@ function timezoneOffset(secondsFromUTC) {
 document.getElementById("sunrise").textContent = timeFromUTC(data.sys.sunrise);
 document.getElementById("sunset").textContent = timeFromUTC(data.sys.sunset);
 document.getElementById("timezone").textContent = timezoneOffset(data.timezone);
+
+document.getElementById("back").addEventListener("click", (event) => {
+	event.preventDefault();
+	goBack();
+});
